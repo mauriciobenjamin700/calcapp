@@ -25,3 +25,7 @@ Tendo o python instalado, execute os seguintes passos:
 Caso queira contribuir com a continuação do projeto, mande um email para mim pelo email `mauriciobenjamin700@gmail.com` que teremos o prazer de trabalhar juntos!
 
 Para os devs, temos o [guia do deve](docs/guide-dev.md) para te ajudar a entender o que fazendo dentro do projeto. De resto boa sorte e bom trabalho.
+
+## Referêncial Matemático Usado
+
+1. [Como calcular Limite com a Regra de L'Hopital](https://www.youtube.com/watch?v=Rk2hPBY5jSQ&ab_channel=ComoFaz)
