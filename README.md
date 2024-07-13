@@ -29,3 +29,7 @@ Para os devs, temos o [guia do deve](docs/guide-dev.md) para te ajudar a entende
 ## Referêncial Matemático Usado
 
 1. [Como calcular Limite com a Regra de L'Hopital](https://www.youtube.com/watch?v=Rk2hPBY5jSQ&ab_channel=ComoFaz)
+
+## Materia Desenvolvido
+
+1. [Casos Base](https://malujoro.notion.site/Photomath-Open-Source-e0bc934c475c4673aada633b8cb7f3b2)
