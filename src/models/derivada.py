@@ -45,6 +45,17 @@ Termo2 == x-2
 
 """
 
+def derive_default():
+    return """
+(1): f(x) = ax+b == a
+(2): f(x) = ax^2 == 2ax
+(3): f(x) = √x == (1/2√x)
+(4): f(x): x^n == (nx^(n-1))
+(5): f(x): ^n√n == ((1 / N)*x^(1-n/n))
+(6): f(x): sen(x) == cos(x)
+(7): f(x): cos(x) == -sen(x)
+"""
+
 def check_constants(Mathematical_Expression: str = "x^2-4"):
     """
     Recebe uma expreção matemática e checa se existem constantes dentro da expreção
@@ -124,6 +135,8 @@ def derive_number(value: str = "x^2"):
         
         if str(value[1:]).isnumeric():
             result = '0'
+        else:
+            result = derive_number(str(value[1:]))
     
     elif len(value) == 3: # Checking if it's a power, like x^2 for example
         if value[1] == '^': # Checking if the mathematical operation is a power, like x^2, if so, we'll treat it as a power to calculate
@@ -171,4 +184,7 @@ def derivada(Mathematical_Expression: str = "x^2-4"):
         
     return result
 
-print(derivada("x^2-4+3"))
+express = "x^2-4+3+x^2"
+
+print(derivada(express))
+print(extract_terms(express))
